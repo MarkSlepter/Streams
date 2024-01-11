@@ -8,7 +8,7 @@ public class Assignment2 {
 
     public static void main(String[] args) {
 
-        List<String> arrayList = Arrays.asList("Mark", "Ansrew", "Dima", "Arthur", "Ivan", "Polina", "Lisa", "Fedor", "Daniil", "Stepan", "Sergey");
+        List<String> arrayList = Arrays.asList("Mark", "Andrew", "Dima", "Arthur", "Ivan", "Polina", "Lisa", "Fedor", "Daniil", "Stepan", "Sergey");
         List<String> filteredNames = arrayList.stream()
                 .filter(name -> name.toLowerCase().startsWith("a"))
                 .toList();
