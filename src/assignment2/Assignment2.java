@@ -11,7 +11,7 @@ public class Assignment2 {
         List<String> arrayList = Arrays.asList("Mark", "Ansrew", "Dima", "Arthur", "Ivan", "Polina", "Lisa", "Fedor", "Daniil", "Stepan", "Sergey");
         List<String> filteredNames = arrayList.stream()
                 .filter(name -> name.toLowerCase().startsWith("a"))
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Names starting with 'a': " + filteredNames);
 
         String firstSortedNames = arrayList.stream()
